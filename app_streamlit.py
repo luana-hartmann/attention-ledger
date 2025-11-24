@@ -29,7 +29,7 @@ def render_stacked_bar(label: str, distribution: dict, social_days_text: str | N
       <div style="font-weight: 600; margin-bottom: 4px;">{label}</div>
       <div style="
           width: 100%;
-          height: 26px;
+          height: 29px;
           border-radius: 999px;
           overflow: hidden;
           border: 1px solid #cccccc;
@@ -67,7 +67,7 @@ def main():
 
     st.title("Attention Ledger")
     st.markdown(
-        "Visualize how your daily habits with **sleep**, **work**, and **social media** "
+        "Visualize how your daily habits with **sleep**, **study/work**, and **social media** "
         "add up over a day, a year, and even a decade."
     )
 
@@ -76,21 +76,21 @@ def main():
     hours_social = st.sidebar.slider(
         "Hours on social media per day",
         min_value=0.0,
-        max_value=12.0,
+        max_value=20.0,
         value=3.0,
         step=0.5,
     )
     hours_sleep = st.sidebar.slider(
         "Hours of sleep per day",
         min_value=0.0,
-        max_value=12.0,
+        max_value=20.0,
         value=7.0,
         step=0.5,
     )
     hours_work = st.sidebar.slider(
         "Hours of work/study per day",
         min_value=0.0,
-        max_value=16.0,
+        max_value=20.0,
         value=8.0,
         step=0.5,
     )
@@ -157,7 +157,8 @@ def main():
 
     st.markdown("---")
     st.markdown(
-        "This is not about guilt. The goal is to make the impact of your daily habits visible."
+        "This is not about guilt. The goal is to make the impact of your daily habits visible. "
+
         "By understanding how your time is spent, small adjustments in your routine can help you regain focus and improve how you use your attention over time."
     )
 
