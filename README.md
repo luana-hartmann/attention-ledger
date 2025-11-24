@@ -143,21 +143,11 @@ Streamlit will start a local web server and open the app in your browser (or pro
 
 ---
 
-## Deploying as an online app (Streamlit Community Cloud)
+## Access the Online App
 
-To share the application as a link without requiring terminal access, you can deploy it using Streamlit Community Cloud:
+To experience the Attention Ledger app without setting up the environment, simply access the online version deployed on Streamlit. Click the link below: 
 
-1. Push this repository to GitHub (if you have not done so already).  
-2. Create a Streamlit account and sign in with GitHub.  
-3. Click “New app” and select:
-   - Repository: your GitHub repository,  
-   - Branch: `main` (or the branch you use),  
-   - Main file: `app_streamlit.py`.  
-4. Confirm the deployment.
-
-Streamlit will install the packages listed in `requirements.txt` and build the app.  
-After deployment, you will receive a public URL (for example, `https://attention-ledger-xyz.streamlit.app`) that you can share with others or include in your project presentation.
-
+[StreamLit App](https://attention-ledger-o8oxrfjd8atxj3af23nsmb.streamlit.app/)
 ---
 
 ## Customization and extension ideas
@@ -170,7 +160,3 @@ Some straightforward extensions that can be implemented on top of the current st
 - Integrate real usage statistics in the future (for example, importing screen-time data), while still keeping a clear, critical perspective on attention and focus.
 
 ---
-
-## License
-
-Add here the license you prefer (for example, MIT, Apache 2.0, or another one).

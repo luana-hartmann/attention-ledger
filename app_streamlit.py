@@ -157,11 +157,9 @@ def main():
 
     st.markdown("---")
     st.markdown(
-        "💡 *This is not about guilt, but about making the invisible visible.* "
-        "Small changes in your daily routine can radically change how your attention is spent "
-        "over months, years, and decades."
+        "This is not about guilt. The goal is to make the impact of your daily habits visible."
+        "By understanding how your time is spent, small adjustments in your routine can help you regain focus and improve how you use your attention over time."
     )
-
 
 if __name__ == "__main__":
     main()
