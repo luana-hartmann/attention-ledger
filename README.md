@@ -31,6 +31,19 @@ The purpose is not to judge but to make the impact of your daily habits visible.
   - Calculates how much time spent on social media could have been used for exercise, showing potential workout sessions that could be completed to meet the WHO recommendation.
 
 ---
+## Additional Visualizations
+
+### Donut Charts with Embedded Images
+The app includes two donut charts comparing:
+
+#### **Short Videos (Reels/TikTok)**
+- ~10% knowledge retained  
+- ~90% wasted  
+
+#### **Long Videos / Movies**
+- Up to ~70% knowledge retained  
+
+---
 
 ## Project Structure
 

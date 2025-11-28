@@ -54,3 +54,40 @@ def extrapolate_time(hours_per_day):
         "ten_year_hours": ten_year_hours,
         "ten_year_days": hours_to_days(ten_year_hours),
     }
+
+def render_long_term_block(
+    col,
+    title: str,
+    period_text: str,
+    days: float,
+    hours: str,
+    videos: str,
+    books: str,
+    movies: str,
+):
+    with col:
+        col.markdown(
+            f"""
+### {title}
+
+In {period_text}, this means **{days:.2f} full days** on social media.
+
+This is equivalent to **{hours} hours**.
+
+And **{videos} videos** of 60 seconds.
+
+📚 Or you could read **{books} books** (300 pages each).
+
+🎬 Or watch **{movies} movies** (90 minutes each).
+"""
+        )
+
+def format_numbers(n: float) -> str:
+    """Formata o número de vídeos em uma forma mais curta (k / M)."""
+    n = float(n)
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f}M"
+    elif n >= 1_000:
+        return f"{n / 1_000:.1f}k"
+    else:
+        return f"{n:.0f}"
